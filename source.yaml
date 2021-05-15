@@ -1,10 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: podinfo
+  name: project-app
   namespace: flux-system
 spec:
   interval: 30s
   ref:
-  branch: main
+    branch: master
   url: https://github.com/zjokinen/devopswithkubernetes 
